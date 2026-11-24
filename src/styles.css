@@ -1,0 +1,76 @@
+@import url('./assets/fonts/fonts.css');
+
+:root {
+  --void-obsidian: #060608;
+  --brushed-carbon: #15161A;
+  --rose-gold-mid: #D49B6A;
+  --rose-gold-spec: #F2C9A0;
+  --rose-gold-shadow: #7A4E2D;
+  --sapphire-glare: #DCE6F2;
+  --ruby-jewel: #9E1B32;
+  --warm-ivory: #F3ECE1;
+  --blued-steel-dark: #1B3B6F;
+  --blued-steel-spec: #4A89DC;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background-color: #060608;
+  color: #F3ECE1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  user-select: none;
+}
+
+#stage {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background-color: #060608;
+}
+
+#main-canvas {
+  position: absolute;
+  inset: 0;
+  width: 1920px;
+  height: 1080px;
+  display: block;
+}
+
+#svg-overlay {
+  position: absolute;
+  inset: 0;
+  width: 1920px;
+  height: 1080px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#dom-overlay {
+  position: absolute;
+  inset: 0;
+  width: 1920px;
+  height: 1080px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Preload hidden font probe so Chromium rasterizes every required face at init */
+#font-preload {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}

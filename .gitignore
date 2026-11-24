@@ -1,0 +1,26 @@
+# Teamwork Workspace & Agent Metadata (NEVER commit)
+.agents/
+PROJECT.md
+
+# Render Timer & Intermediate Pipeline Outputs
+.render_start_ts
+chunks/
+chunks.txt
+*preview*.mp4
+*.wav
+*.tmp.mp4
+*.part
+
+# Node / Python / OS / Scratch
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+*.log
+
+# Explicitly keep required root deliverables un-ignored
+!style_frame_check.png
+!transition_and_motion_check.png
+!final_vaucher_noir_1080p30.mp4
